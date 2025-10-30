@@ -183,8 +183,8 @@ export default class MonitorScreen extends EventEmitter {
         };
 
         // Set iframe attributes
-        // PROD - DigitinexusOS
-        iframe.src = 'https://digitinexus.com/';
+        // PROD - DigitiNexus OS
+        iframe.src = 'https://os.digitinexus.com/';
         /**
          * Use dev server is query params are present
          *
