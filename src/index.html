@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Favicon configurations for all platforms - using logo.png -->
+  <link rel="shortcut icon" href="/logo.png" type="image/png" />
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/logo.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/logo.png" />
+  <link rel="apple-touch-icon" href="/logo.png" />
+  <link rel="manifest" href="/manifest.json" />
+  
+  <!-- iOS full screen + notch support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <!-- Theme color for iOS UI bars -->
+  <meta name="theme-color" content="#000000" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: rgb(0, 0, 0);
+      margin: 0;
+    }
+
+    #webgl {
+      pointer-events: none;
+    }
+
+    #ui-app {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    #ui {
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    #monitor-videos {
+      pointer-events: none;
+      position: 'absolute';
+      opacity: 0;
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
+
+    }
+
+    #css {
+      cursor: pointer;
+    }
+
+    #ui-interactive {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 256px;
+    }
+
+    video {
+      position: absolute;
+      top: 0;
+      pointer-events: none;
+    }
+  </style>
+
+  <!-- Primary Meta Tags -->
+  <title>Stand Out With DigitiNexus | Web Agency</title>
+  <meta name="description" content="Tailor-made websites, fast, elegant, and optimized for growth.">
+  <meta name="keywords" content="website creation, web agency, website development, web design, business website, e-commerce website, digital agency, web development, website redesign, professional websites, SEO optimization, Google ranking, communication agency, website management, responsive websites, mobile-friendly websites, custom websites, landing page creation, front-end development, back-end development, creazione siti web, agenzia web, sviluppo siti internet, realizzazione siti web, design sito web, sito vetrina, sito e-commerce, agenzia digitale, sviluppo web, restyling sito web, siti professionali, ottimizzazione SEO, posizionamento Google, agenzia di comunicazione, gestione sito web, siti responsive, siti mobile friendly, siti personalizzati, creazione landing page, sviluppo front-end, sviluppo back-end">
+  
+  <!-- Additional meta tags for better Google indexing -->
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="author" content="DigitiNexus" />
+  <meta name="publisher" content="DigitiNexus" />
+  <meta name="copyright" content="DigitiNexus" />
+  <meta name="language" content="en, it" />
+  <meta name="revisit-after" content="7 days" />
+  <meta name="rating" content="general" />
+  <meta name="distribution" content="global" />
+  <meta name="geo.region" content="IT" />
+  <meta name="geo.placename" content="Italy" />
+  <meta name="geo.position" content="41.9028;12.4964" />
+  <meta name="ICBM" content="41.9028, 12.4964" />
+
+  <!-- Canonical & hreflang -->
+  <link rel="canonical" href="https://digitinexus.com" />
+  <link rel="alternate" href="https://digitinexus.com/en" hreflang="en" />
+  <link rel="alternate" href="https://digitinexus.com/it" hreflang="it" />
+  <link rel="alternate" href="https://digitinexus.com" hreflang="x-default" />
+  
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="Stand Out With DigitiNexus | Web Agency" />
+  <meta property="og:description" content="Tailor-made websites, fast, elegant, and optimized for growth." />
+  <meta property="og:image" content="/logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://digitinexus.com" />
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Stand Out With DigitiNexus | Web Agency" />
+  <meta name="twitter:description" content="Tailor-made websites, fast, elegant, and optimized for growth." />
+  <meta name="twitter:image" content="/logo.png" />
+</head>
+
+<body>
+  <div id="css"></div>
+  <div id="webgl"></div>
+  <div id="overlay"></div>
+  <div id="ui-interactive"></div>
+  <div id="ui"></div>
+  <div id="monitor-videos">
+    <video id="video-1" muted loop autoplay width="0" height="0" src="../static/textures/monitor/video/base-static.mp4"
+      style="opacity: 0;"></video>
+    <video id="video-2" muted loop autoplay width="0" height="0"
+      src="../static/textures/monitor/video/static-texture-layer.mp4" style="opacity: 0;"></video>
+  </div>
+</body>
+
+</html>
